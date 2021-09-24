@@ -1,0 +1,172 @@
+
+html {
+    height:100%;
+  }
+  
+  body {
+    margin:0;
+  }
+  
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, black 50% ,grey 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  } 
+
+
+#value{
+    color:orange;
+    font-size: 15px;
+}
+#pass{
+    color:orange;
+    font-size: 15px;
+}
+
+ 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg,#2980b9, #8e44ad);
+  height: 100vh;
+  overflow: hidden;
+}
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(46, 124, 139) 100%);
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(17, 14, 14, 0.05);
+  opacity: 0.8;
+  padding-bottom: 5%;
+  display: none;
+}
+.center h1{
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid silver;
+}
+.center form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+form .txt_field{
+  position: relative;
+  border-bottom: 2px solid white;
+  margin: 30px 0;
+}
+.txt_field input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+}
+.txt_field label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: white;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+.txt_field span::before{
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: yellowgreen;
+  transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top: -5px;
+  color: yellowgreen;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+  width: 100%;
+}
+
+
+input[type="submit"]{
+  width: 100%;
+  height: 45px;
+  border: 1px solid;
+  background: black;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+input[type="submit"]:hover{
+  border-color: rgb(207, 199, 81);
+  background: rgb(197, 107, 22);
+  transition: .5s;
+  color: white;
+}
+
+@media (max-width:800px){
+  .center{
+    padding-bottom: 45px;
+  }
+  input[type="submit"]{
+    color: blue;
+    height: 55px;
+    font-size: 20px;
+    border-color: blue;
+    border-radius: 30px;
+  }
+  input[type="submit"]:hover{
+    border-color: rgb(153, 146, 51);
+    background: rgb(192, 163, 34);
+    transition: .5s;
+    color: white;
+  }
+}
+
+ 
+

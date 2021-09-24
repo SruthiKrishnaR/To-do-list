@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        <div class="content">
+
+            <div class="center">
+                <h1><span style="font-family: 'Prompt', sans-serif;"> LOG IN </span></h1>
+                <form action = "main.html" onsubmit="return validate(valName,valPwd)">
+                  <div class="txt_field">
+                    <input type="text" required id="name" oninput="valName()">
+                    <label>Username</label>
+                  </div>
+                  <span id="value"></span>
+                  <div class="txt_field">
+                    <input type="password" required id="pwd" oninput="valPwd()">
+                    <label>Password</label>
+                  </div>
+                  <span id="pass"></span>
+            
+                    <input type="submit" value="Login" id="submit">
+                  
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                  <script src="script.js"></script>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
