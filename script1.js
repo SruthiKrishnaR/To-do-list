@@ -56,22 +56,6 @@
     };
     
     
-    
-    
-
-//console.log(find);
-                        // for (var i = 0; i < find.length; i++) {
-                        //     const arr = find[i];
-
-                        //     if($(arr).prop("checked")==true){
-                        //         resolve();
-                        //     }
-                        //     else if($(arr).prop("checked")==false){
-                        //         //console.log("not checked");
-                        //         //alert("not checked");
-                        //         reject();
-                        //     }
-                        
-                        // }
+ 
 
     
